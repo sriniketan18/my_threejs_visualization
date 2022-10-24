@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Elevation Map</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div id="stats">
+  <h1>Select an area</h1>
+  <a id="map-link" target="_blank">Map</a>    
+  <form>
+    <select name="geo">
+      <option value="athabasca">Athabasca Glacier</option>
+      <option value="coldeliseran">Col de l'Iseran</option>
+      <option value="everest" selected>Mount Everest</option>
+      <option value="franzjosefglacier">Franz Josef Glacier</option>
+      <option value="grouse">Grouse Grind</option>
+      <option value="jotunheimen">Jotunheimen</option>
+      <option value="k2">K2</option>
+      <option value="kangchenjunga">Kangchenjunga</option>
+      <option value="everest-valley">Khumbu Glacier</option>
+      <option value="lakecomo">Lake Como</option>
+      <option value="petra">Petra</option>
+      <option value="sanfrancisco">San Francisco</option>
+      <option value="valparaiso">Valparaíso</option>
+    </select>
+  </form> 
+  <span id="loading"></span>
+</div>
+<div id="viewport"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+<script src='https://s3.ca-central-1.amazonaws.com/kevinnewcombe/three-terrain/_js/OrbitControls.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
